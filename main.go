@@ -83,7 +83,8 @@ func main() {
 
 			if wasReflected {
 				outputOfUrl = append(outputOfUrl, char)
-				print(outputOfUrl)
+				fmt.Println(outputOfUrl)
+				fmt.Println(outputOfUrl[0])
 				os.Exit(0)
 			}
 		}
