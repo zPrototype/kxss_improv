@@ -83,12 +83,9 @@ func main() {
 
 			if wasReflected {
 				outputOfUrl = append(outputOfUrl, char)
-				fmt.Println(outputOfUrl)
-				fmt.Println(outputOfUrl[0])
-				os.Exit(0)
 			}
 		}
-		if len(outputOfUrl) >= 2 {
+		if len(outputOfUrl) >= 2 && outputOfUrl[2:] != nil {
 			fmt.Printf("URL: %s Param: %s Unfiltered: %v \n", outputOfUrl[0], outputOfUrl[1], outputOfUrl[2:])
 		}
 	})
